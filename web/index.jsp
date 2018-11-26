@@ -76,10 +76,10 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="IndexServlet">Home</a></li>
                                 
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="listings.html">Properties</a></li>
+                                <li><a href="AboutServlet">About Us</a></li>
+                                <li><a href="ListingsServlet">Properties</a></li>
                                 <li><a href="blog.html">Blog</a></li>
                                 
                                 <li><a href="contact.html">Contact</a></li>

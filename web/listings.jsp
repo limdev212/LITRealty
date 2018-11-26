@@ -78,7 +78,7 @@
                       <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="IndexServlet">Home</a></li>
                                 
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="listings.html">Properties</a></li>
@@ -132,30 +132,37 @@
 
             <div class="row">
                 <div class="col-12 col-lg-12">
+                   
                    <table id="table_id" class="display">
                         <thead>
                             <tr>
-                                <th>Image</th>
                                 <th>Street</th>
                                 <th>City</th>
-                                <th>Style</th>
                                 <th>Bedrooms</th>
                                 <th>Bathrooms</th>
-                                <th>SQ. Ft.</th>
-                                <th>View</th>
+                                <th>Price</th>
+                                <th>Type</th>
+                                <th>Image</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
+                         <c:forEach items="${list}" var="p" varStatus="status">
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>${p.street}</td>
+                                <td>${p.city}</td>
+                                <td>${p.bedrooms}</td>
+                                <td>${p.bathrooms}</td>
+                                <td>${p.price}</td>
+                                <td>${p.typeId}</td> 
+                                <td><img src="img/thumbs/${p.photo}"></td> 
                             </tr>
+    
+                        </c:forEach>  
+                                
+                            
+                                
+                                
                         </tbody>
                     </table>
                 </div>
